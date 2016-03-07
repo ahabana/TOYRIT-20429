@@ -1,0 +1,8 @@
+
+<suite name="Demo">
+	<test name="Test">
+	<classes>
+		<class name="com.ahabana.Main"/>
+	</classes>
+	</test>
+</suite>

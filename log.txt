@@ -1,0 +1,15 @@
+[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+[TestNG] Running:
+  /Users/ahabana/Dropbox/20160306/TOYRIT-20429/test.xml
+
+90245 Failed
+90250 Failed
+90251 Failed
+90254 Failed
+90260 Passed
+90261 Passed
+90266 Passed
+90267 Passed
+90277 Passed
+90278 Passed
+90304 Passed
