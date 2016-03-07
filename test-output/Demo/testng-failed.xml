@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demo]">
+  <test name="Test">
+    <classes>
+      <class name="com.ahabana.Main"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.ahabana.Main">
+        <methods>
+          <include name="afterTest"/>
+          <include name="test" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.ahabana.Main -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Demo] -->
