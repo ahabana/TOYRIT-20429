@@ -1,15 +1,86 @@
-[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
 [TestNG] Running:
   /Users/ahabana/Dropbox/20160306/TOYRIT-20429/test.xml
 
-90245 Failed
-90250 Failed
-90251 Failed
-90254 Failed
-90260 Passed
-90261 Passed
-90266 Passed
-90267 Passed
-90277 Passed
-90278 Passed
-90304 Passed
+http://tstcpd201.toyota.com/?zipcode=00000 Failed
+http://tstcpd201.toyota.com/?zipcode=90245 Passed
+http://tstcpd201.toyota.com/?zipcode=90250 Passed
+http://tstcpd201.toyota.com/?zipcode=90251 Passed
+http://tstcpd201.toyota.com/?zipcode=90254 Passed
+http://tstcpd201.toyota.com/?zipcode=90260 Passed
+http://tstcpd201.toyota.com/?zipcode=90261 Passed
+http://tstcpd201.toyota.com/?zipcode=90266 Passed
+http://tstcpd201.toyota.com/?zipcode=90267 Passed
+http://tstcpd201.toyota.com/?zipcode=90277 Passed
+http://tstcpd201.toyota.com/?zipcode=90278 Passed
+http://tstcpd201.toyota.com/?zipcode=90304 Passed
+http://tstcpd201.toyota.com/?zipcode=90310 Passed
+http://tstcpd201.toyota.com/?zipcode=90503 Passed
+http://tstcpd201.toyota.com/?zipcode=90504 Passed
+http://tstcpd201.toyota.com/?zipcode=90509 Passed
+http://tstcpd201.toyota.com/?zipcode=90510 Passed
+http://tstcpd201.toyota.com/?zipcode=90742 Passed
+http://tstcpd201.toyota.com/?zipcode=90743 Passed
+http://tstcpd201.toyota.com/?zipcode=92003 Passed
+http://tstcpd201.toyota.com/?zipcode=92003 Passed
+http://tstcpd201.toyota.com/?zipcode=92007 Passed
+http://tstcpd201.toyota.com/?zipcode=92008 Passed
+http://tstcpd201.toyota.com/?zipcode=92009 Passed
+http://tstcpd201.toyota.com/?zipcode=92010 Passed
+http://tstcpd201.toyota.com/?zipcode=92011 Passed
+http://tstcpd201.toyota.com/?zipcode=92013 Passed
+http://tstcpd201.toyota.com/?zipcode=92014 Passed
+http://tstcpd201.toyota.com/?zipcode=92018 Passed
+http://tstcpd201.toyota.com/?zipcode=92023 Passed
+http://tstcpd201.toyota.com/?zipcode=92024 Passed
+http://tstcpd201.toyota.com/?zipcode=92028 Passed
+http://tstcpd201.toyota.com/?zipcode=92029 Passed
+http://tstcpd201.toyota.com/?zipcode=92049 Passed
+http://tstcpd201.toyota.com/?zipcode=92051 Passed
+http://tstcpd201.toyota.com/?zipcode=92052 Passed
+http://tstcpd201.toyota.com/?zipcode=92054 Passed
+http://tstcpd201.toyota.com/?zipcode=92055 Passed
+http://tstcpd201.toyota.com/?zipcode=92056 Passed
+http://tstcpd201.toyota.com/?zipcode=92057 Passed
+http://tstcpd201.toyota.com/?zipcode=92058 Passed
+http://tstcpd201.toyota.com/?zipcode=92067 Passed
+http://tstcpd201.toyota.com/?zipcode=92068 Passed
+http://tstcpd201.toyota.com/?zipcode=92075 Passed
+http://tstcpd201.toyota.com/?zipcode=92078 Passed
+http://tstcpd201.toyota.com/?zipcode=92081 Passed
+http://tstcpd201.toyota.com/?zipcode=92083 Passed
+http://tstcpd201.toyota.com/?zipcode=92084 Passed
+http://tstcpd201.toyota.com/?zipcode=92085 Passed
+http://tstcpd201.toyota.com/?zipcode=92088 Passed
+http://tstcpd201.toyota.com/?zipcode=92091 Passed
+http://tstcpd201.toyota.com/?zipcode=92536 Passed
+http://tstcpd201.toyota.com/?zipcode=92543 Passed
+http://tstcpd201.toyota.com/?zipcode=92544 Passed
+http://tstcpd201.toyota.com/?zipcode=92545 Passed
+http://tstcpd201.toyota.com/?zipcode=92546 Passed
+http://tstcpd201.toyota.com/?zipcode=92562 Passed
+http://tstcpd201.toyota.com/?zipcode=92563 Passed
+http://tstcpd201.toyota.com/?zipcode=92564 Passed
+http://tstcpd201.toyota.com/?zipcode=92584 Passed
+http://tstcpd201.toyota.com/?zipcode=92589 Passed
+http://tstcpd201.toyota.com/?zipcode=92590 Passed
+http://tstcpd201.toyota.com/?zipcode=92591 Passed
+http://tstcpd201.toyota.com/?zipcode=92592 Passed
+http://tstcpd201.toyota.com/?zipcode=92593 Passed
+http://tstcpd201.toyota.com/?zipcode=92595 Passed
+http://tstcpd201.toyota.com/?zipcode=92596 Passed
+http://tstcpd201.toyota.com/?zipcode=92605 Passed
+http://tstcpd201.toyota.com/?zipcode=92615 Passed
+http://tstcpd201.toyota.com/?zipcode=92646 Passed
+http://tstcpd201.toyota.com/?zipcode=92647 Passed
+http://tstcpd201.toyota.com/?zipcode=92648 Passed
+http://tstcpd201.toyota.com/?zipcode=92649 Passed
+http://tstcpd201.toyota.com/?zipcode=92672 Passed
+http://tstcpd201.toyota.com/?zipcode=92674 Passed
+http://tstcpd201.toyota.com/?zipcode=92708 Passed
+http://tstcpd201.toyota.com/?zipcode=92728 Passed
+
+===============================================
+Demo
+Total tests run: 77, Failures: 1, Skips: 0
+===============================================
+
