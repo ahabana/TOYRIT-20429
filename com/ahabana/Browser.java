@@ -4,16 +4,20 @@ package com.ahabana;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 
+import org.openqa.selenium.Keys;
+
 public class Browser
 {
 	// instance variable
 	protected WebDriver driver;
-
-	public Browser()
-	{
-		// no constructor
-	}
-
+    
+    // xpaths
+    String your_location = ".//button[@data-target='#tcom-nav-zip-flyout']";
+    String zip_input = ".//input[@data-error-message='Enter a zipcode.']";
+    String submit = ".//a[@class='tcom-submit active']";
+    String camry_all_access = "//a[contains(.,'Camry All-Access')]";
+    String expected = "https://ssl.toyota.com/all-access/camry/home";
+    
 	// setter for driver
 	public void setDriver(WebDriver driver)
 	{
@@ -25,65 +29,44 @@ public class Browser
 	{
 		return this.driver;
 	}
-
+	
 	// changes zipcode
 	public void zipChanger(String zipcode)
 	{
-        // landing
-        String url = "http://tstcpd201.toyota.com";
-    
-        // xpaths
-        String your_location = ".//button[@data-target='#tcom-nav-zip-flyout']";
-        String zip_input = ".//input[@data-error-message='Enter a zipcode.']";
-        // String submit = ".//a[contains(.,'Submit')]";
-        String submit = ".//*[@id='tcom-nav-zip-flyout']/div[1]/div/div/a";
-        String camry_all_access = ".//img[contains(@src,'access.jpg')]";
-    
-        // landing page
-        driver.get(url);
-    
-        // change zipcode
-        driver.findElement(By.xpath(your_location)).click();
-        driver.findElement(By.xpath(zip_input)).sendKeys(zipcode);
-        driver.findElement(By.xpath(submit)).click();
-
-		// wait for page
-		try
-		{
-			Thread.sleep(2000L);	
-		}
-		catch (Exception e)
-		{
-			org.testng.Assert.fail();
-		}
+        StringBuilder url = new StringBuilder();
+        url.append("http://tstcpd201.toyota.com/");
+        url.append("?zipcode=");
+        url.append(zipcode);
+        
+        System.out.print(url.toString() + " ");
+        driver.get(url.toString());
 	}
 
-	// validate presence of camry image	
+	// validate camry redirect
 	public void validateCamry(String zipcode)
 	{
-        // xpaths
-        String camry_all_access = ".//img[contains(@src,'access.jpg')]";
-    
-        // refresh
-        driver.navigate().refresh();
-			
-        // validate camry all access image
-        if ( driver.findElement(By.xpath(camry_all_access)).isDisplayed() )
+        // click camry tile
+        try
         {
-            System.out.print(zipcode + " ");
-            System.out.println("Passed");
+            driver.findElement(By.xpath(camry_all_access)).click();
         }
-        else
+        catch (Exception e)
         {
-            System.out.print(zipcode + " ");
-            System.out.println("Failed");
-			
-            // fail test case
+            System.out.print("Failed");
+            System.out.println();
             org.testng.Assert.fail();
-			
-            // take screenshot
-            // TODO:
         }
+        
+        // get url
+        String url = driver.getCurrentUrl();
+        
+        // check if click worked
+        if ( url.equals(expected) )
+        {
+            System.out.print("Passed");
+        }
+        
+        System.out.println();
 	}
 	
 	public void close()
